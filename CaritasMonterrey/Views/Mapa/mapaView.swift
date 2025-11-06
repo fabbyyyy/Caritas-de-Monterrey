@@ -29,7 +29,7 @@ struct mapaView: View {
             Map(position: $position) {
                 UserAnnotation()
 
-            
+            // Bazares from DB
                 ForEach(viewModel.Locations) { loc in
                     let coordinate = CLLocationCoordinate2D(latitude: CLLocationDegrees(loc.latitude),
                                                             longitude: CLLocationDegrees(loc.longitude))
